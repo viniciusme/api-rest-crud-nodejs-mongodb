@@ -1,0 +1,38 @@
+{
+  "name": "api-rest-crud-nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "Este projeto é uma API desenvolvida com foco no estudo acadêmico.  API com Nodejs + Express + Mongoose + MongoDb + MongoDb Atlas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.ts",
+    "start": "node ./src/server.ts",
+    "build": "rm -rf build/ && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusme/api-rest-crud-nodejs-mongodb.git"
+  },
+  "keywords": [],
+  "author": "Viniciu Mendes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusme/api-rest-crud-nodejs-mongodb/issues"
+  },
+  "homepage": "https://github.com/viniciusme/api-rest-crud-nodejs-mongodb#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.2",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.14",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.7.23",
+    "typescript": "^4.8.3"
+  }
+}
