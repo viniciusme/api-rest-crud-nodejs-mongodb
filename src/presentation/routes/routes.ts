@@ -9,8 +9,8 @@ const routes = Router();
 routes.use("/user", user);
 
 //Rota health-check
-routes.get("/", (req, res, next) => {
-  res.status(200).send({ msg: "Rota health-check funcionando!" });
+routes.get("/", (req, res) => {
+  res.status(200).json({ msg: "Rota health-check funcionando!" });
 });
 
 export default routes;
