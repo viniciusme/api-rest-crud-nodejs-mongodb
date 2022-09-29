@@ -1,7 +1,11 @@
 import express from "express";
 
+import { dbConnection } from "./core/data/db";
 import routes from "../src/presentation/routes/routes";
-const port = process.env.PORT || 3000;
+
+// Habilitando variáveis de ambiente
+require("dotenv").config();
+const port = process.env.PORT;
 
 // Cria uma nova instância do aplicativo expresso
 const app = express();
@@ -12,7 +16,7 @@ app.use(
   })
 );
 
-//Chama midlewares
+// Chama midlewares
 app.use(express.json());
 
 //Definir todas as rotas da pasta de rotas
@@ -24,3 +28,6 @@ const server = app.listen(port, () => {
     `O servidor da API foi iniciado na porta ${port}. Abra http://localhost:${port} para ver os resultados`
   );
 });
+
+// Conexão com MongoDb
+dbConnection();
