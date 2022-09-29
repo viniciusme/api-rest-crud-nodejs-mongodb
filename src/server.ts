@@ -1,6 +1,6 @@
 import express from "express";
 
-import { dbConnection } from "./core/data/db";
+import { dbConnection } from "./infra/data/db";
 import routes from "../src/presentation/routes/routes";
 
 // Habilitando variáveis de ambiente
